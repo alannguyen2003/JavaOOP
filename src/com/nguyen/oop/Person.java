@@ -9,11 +9,11 @@ package com.nguyen.oop;
  *
  * @author acer
  */
-public class Person {
-    String name;
-    String age;
-    String school;
-    String classroom;
+public abstract class Person implements ModelInterface {
+    private String name;
+    private String age;
+    private String school;
+    private String classroom;
 
     public Person() {
     }
@@ -24,8 +24,40 @@ public class Person {
         this.school = school;
         this.classroom = classroom;
     }
-    
-    public void viewProfile() {
-        System.out.println(this);
+
+    public String getName() {
+        return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public String getSchool() {
+        return school;
+    }
+
+    public void setSchool(String school) {
+        this.school = school;
+    }
+
+    public String getClassroom() {
+        return classroom;
+    }
+
+    public void setClassroom(String classroom) {
+        this.classroom = classroom;
+    }
+    
+    //Method không được ghi ở đây
+    //Mà phải ghi ở một class khác gọi là Interface
+
 }

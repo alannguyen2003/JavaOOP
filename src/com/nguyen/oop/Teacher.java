@@ -23,6 +23,24 @@ public class Teacher extends Person {
     
     public Teacher() {
     }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher{" + "name=" + this.getName() + ", age=" + this.getAge() + ", school=" + this.getSchool() + ", classroom=" + this.getClassroom() + ", salary=" + salary + '}';
+    }
+
+    @Override
+    public void viewProfile() {
+        System.out.println(this);
+    }
     //getter setter 
     /**
      * Getter : dùng để lấy giá trị hiện có của đối tượng
